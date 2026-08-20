@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap");
+@import "tailwindcss";
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #0b1736;
+  background: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --cir-blue: #0759df;
+  --cir-blue-light: #edf5ff;
+  --cir-navy: #0b1736;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #fff; }
+button, a { -webkit-tap-highlight-color: transparent; }
+.font-display { font-family: "Playfair Display", serif; }
+
+.page-background {
+  background:
+    radial-gradient(circle at 8% 15%, rgba(43,119,255,.035), transparent 25%),
+    radial-gradient(circle at 90% 30%, rgba(32,148,255,.035), transparent 25%),
+    #fff;
+}
+
+.circuit-background {
+  background-image:
+    linear-gradient(90deg, rgba(26,115,232,.045) 1px, transparent 1px),
+    linear-gradient(rgba(26,115,232,.045) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+.dot-pattern {
+  background-image: radial-gradient(rgba(20,102,220,.22) 1.3px, transparent 1.3px);
+  background-size: 11px 11px;
+}
+
+.academic-card {
+  border: 1px solid #e7edf7;
+  background: rgba(255,255,255,.94);
+  box-shadow: 0 4px 20px rgba(15,35,75,.035), 0 15px 40px rgba(15,35,75,.025);
+  transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+}
+
+.academic-card:hover {
+  transform: translateY(-5px);
+  border-color: #cfe0ff;
+  box-shadow: 0 10px 30px rgba(15,76,180,.08), 0 25px 60px rgba(15,76,180,.05);
+}
+
+.hero-glow {
+  background: radial-gradient(circle, rgba(25,119,255,.13), rgba(25,119,255,.04) 40%, transparent 70%);
+}
+
+@keyframes robotFloat {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.robot-float { animation: robotFloat 5s ease-in-out infinite; }
+
+@keyframes orbitRotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.orbit { animation: orbitRotate 25s linear infinite; }
+
+@keyframes softPulse {
+  0%,100% { opacity: .55; }
+  50% { opacity: 1; }
+}
+.soft-pulse { animation: softPulse 3s ease-in-out infinite; }
+
+.section-padding { padding-top: 100px; padding-bottom: 100px; }
+@media (max-width: 768px) {
+  .section-padding { padding-top: 70px; padding-bottom: 70px; }
+}
