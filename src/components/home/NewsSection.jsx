@@ -11,8 +11,8 @@ export default function NewsSection() {
     <section id="news" className="bg-white py-20">
       <div className="mx-auto max-w-[1240px] px-6">
         <div className="mb-7 flex items-center justify-between">
-          <div className="text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-600">News & Events</div>
-          <a href="#" className="flex items-center gap-2 text-[12px] font-medium text-blue-600">
+          <div className="text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-900">News & Events</div>
+          <a href="#" className="flex items-center gap-2 text-[12px] font-medium text-blue-900">
             View All News & Events <ArrowRight size={15} />
           </a>
         </div>
@@ -28,7 +28,7 @@ export default function NewsSection() {
                 <div className="text-[10px] font-medium text-blue-600">{item.date}</div>
                 <h3 className="mt-2 text-[15px] font-bold leading-5 text-[#0b1736]">{item.title}</h3>
                 <p className="mt-2 line-clamp-3 text-[11px] leading-5 text-slate-500">{item.description}</p>
-                <a href="#" className="mt-3 flex items-center gap-2 text-[11px] font-semibold text-blue-600">
+                <a href="#" className="mt-3 flex items-center gap-2 text-[11px] font-semibold text-blue-900">
                   Read More <ArrowRight size={13} />
                 </a>
               </div>
