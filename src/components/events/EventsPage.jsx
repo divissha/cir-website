@@ -16,7 +16,7 @@ const eventSections = {
 
     cards: [
       {
-        number: "01",
+        number: "1",
         title: "Summer Internship Program",
         description:
           "Opportunities for students to work on research and development projects in robotics, artificial intelligence and intelligent systems.",
@@ -24,7 +24,7 @@ const eventSections = {
       },
 
       {
-        number: "02",
+        number: "2",
         title: "Research Internship",
         description:
           "Research-oriented internship opportunities for students interested in working with faculty members and research groups at CIR.",
@@ -32,7 +32,7 @@ const eventSections = {
       },
 
       {
-        number: "03",
+        number: "3",
         title: "Student Internship Opportunities",
         description:
           "Explore internship opportunities involving robotics, machine learning, computer vision and autonomous systems.",
@@ -48,7 +48,7 @@ const eventSections = {
 
     cards: [
       {
-        number: "01",
+        number: "1",
         title: "Robotics Workshop",
         description:
           "Hands-on sessions introducing participants to robotics, robotic systems, sensors and intelligent autonomous machines.",
@@ -56,7 +56,7 @@ const eventSections = {
       },
 
       {
-        number: "02",
+        number: "2",
         title: "Artificial Intelligence Workshop",
         description:
           "An academic workshop covering concepts and practical applications of artificial intelligence and machine learning.",
@@ -64,7 +64,7 @@ const eventSections = {
       },
 
       {
-        number: "03",
+        number: "3",
         title: "Computer Vision Workshop",
         description:
           "Learn about computer vision techniques, image processing and their applications in intelligent robotic systems.",
@@ -77,15 +77,15 @@ const eventSections = {
 
 function SectionHeading({ children }) {
   return (
-    <div className="mb-8 flex items-center gap-4">
+    <div className="mb-0 flex items-center gap-4">
 
-      <div className="h-px flex-1 bg-slate-100" />
+      {/* <div className="h-px flex-1 bg-slate-100" />
 
       <span className="text-[11px] font-semibold uppercase tracking-[0.18em] text-slate-400">
         {children}
       </span>
 
-      <div className="h-px flex-1 bg-slate-100" />
+      <div className="h-px flex-1 bg-slate-100" /> */}
 
     </div>
   );
@@ -117,11 +117,11 @@ export default function EventsPage() {
 
         {/* Header */}
 
-        <div className="mb-14 text-center">
+        <div className="mb-3 text-center">
 
-          <div className="mb-5 flex items-center justify-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-600">
+          <div className="mb-3 flex items-center justify-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-800">
 
-            <span className="h-2 w-2 rounded-full bg-blue-600" />
+            <span className="h-2 w-2 rounded-full bg-blue-800" />
 
             Centre for Intelligent Robotics
 
@@ -132,14 +132,14 @@ export default function EventsPage() {
 
             Events &{" "}
 
-            <span className="text-blue-600">
+            <span className="text-blue-800">
               Opportunities
             </span>
 
           </h1>
 
 
-          <p className="mx-auto mt-5 max-w-[700px] text-[15px] leading-7 text-slate-500">
+          <p className="mx-auto mt-4 max-w-[700px] text-[15px] leading-7 text-slate-500">
 
             Explore internship opportunities, workshops and
             academic activities offered through the Centre for
@@ -152,7 +152,7 @@ export default function EventsPage() {
 
         {/* Tabs */}
 
-        <div className="mb-16 flex justify-center">
+        <div className="mb-10 flex justify-center">
 
           <div className="flex flex-wrap justify-center gap-3">
 
@@ -173,8 +173,8 @@ export default function EventsPage() {
                     }
                     className={`flex items-center gap-2 rounded-full border px-6 py-3 text-[13px] font-medium transition-all duration-300 ${
                       isActive
-                        ? "border-blue-600 bg-blue-600 text-white shadow-lg shadow-blue-500/15"
-                        : "border-blue-100 bg-white text-[#17213b] hover:border-blue-400 hover:text-blue-600"
+                        ? "border-blue-800 bg-blue-800 text-white shadow-lg shadow-blue-500/15"
+                        : "border-blue-100 bg-white text-[#17213b] hover:border-blue-600 hover:text-blue-800"
                     }`}
                   >
 
@@ -201,9 +201,9 @@ export default function EventsPage() {
           </SectionHeading>
 
 
-          <div className="mb-8 flex items-center gap-4">
+          <div className="mb-4 flex items-center gap-4">
 
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-blue-600">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-blue-800">
 
               <ActiveIcon
                 size={23}
@@ -230,7 +230,7 @@ export default function EventsPage() {
 
           {/* Cards */}
 
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-3">
 
             {activeData.cards.map((card) => (
               <EventCard
@@ -252,7 +252,7 @@ export default function EventsPage() {
 
             <div>
 
-              <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-600">
+              <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-800">
                 CIR Opportunities
               </div>
 

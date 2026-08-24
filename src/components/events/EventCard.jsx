@@ -5,13 +5,13 @@ export default function EventCard({ card }) {
     <article className="group relative overflow-hidden rounded-xl border border-slate-200 bg-white px-6 py-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_15px_40px_rgba(15,76,180,0.08)] md:px-8 md:py-7">
 
       {/* Blue accent */}
-      <div className="absolute left-0 top-0 h-full w-[3px] bg-blue-600 transition-all duration-300 group-hover:w-[5px]" />
+      <div className="absolute left-0 top-0 h-full w-[3px] bg-blue-800 transition-all duration-300 group-hover:w-[5px]" />
 
       <div className="flex gap-5 md:gap-7">
 
         {/* Number */}
         <div className="shrink-0">
-          <span className="font-display text-[24px] font-semibold text-blue-600">
+          <span className="font-display text-[24px] font-semibold text-blue-800">
             {card.number}
           </span>
         </div>
@@ -25,7 +25,7 @@ export default function EventCard({ card }) {
             <CalendarDays
               size={14}
               strokeWidth={1.8}
-              className="text-blue-600"
+              className="text-blue-800"
             />
 
             <span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-slate-400">

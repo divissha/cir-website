@@ -1,5 +1,10 @@
 import { useState } from "react";
-import { ArrowRight, Menu, X } from "lucide-react";
+import {
+  ArrowRight,
+  ChevronDown,
+  Menu,
+  X,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 const navigation = [
@@ -9,17 +14,29 @@ const navigation = [
   { name: "Office of PG", path: "/office-pg" },
   { name: "Collaborations", path: "/collaborations" },
   { name: "Projects", path: "/projects" },
-  { name: "Blogs", path: "/blogs" },
   { name: "Donations", path: "/donations" },
+];
+
+const blogLinks = [
+  {
+    name: "Students",
+    path: "/students",
+  },
+  {
+    name: "Gallery",
+    path: "/gallery",
+  },
 ];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [blogOpen, setBlogOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-100 bg-white/90 backdrop-blur-xl">
 
       <div className="mx-auto flex h-[88px] max-w-[1380px] items-center justify-between px-6 lg:px-10">
+
 
         {/* =====================================================
             LOGO
@@ -66,6 +83,8 @@ export default function Navbar() {
 
         <nav className="hidden items-center gap-8 lg:flex">
 
+          {/* Normal navigation links */}
+
           {navigation.map((item) => (
 
             <Link
@@ -76,18 +95,74 @@ export default function Navbar() {
 
               {item.name}
 
-              {/* Home underline */}
-
-              {item.name === "Home" && (
-                <span className="absolute -bottom-[31px] left-0 h-[2px] w-full bg-blue-800" />
-              )}
-
             </Link>
 
           ))}
 
 
-          {/* Contact */}
+          {/* =================================================
+              BLOGS DROPDOWN
+          ================================================= */}
+
+          <div
+            className="relative"
+            onMouseEnter={() => setBlogOpen(true)}
+            onMouseLeave={() => setBlogOpen(false)}
+          >
+
+            <button
+              type="button"
+              onClick={() => setBlogOpen(!blogOpen)}
+              className="flex items-center gap-1 text-[14px] font-medium text-[#17213b] transition hover:text-blue-800"
+            >
+
+              Blogs
+
+              <ChevronDown
+                size={15}
+                className={`transition-transform duration-200 ${
+                  blogOpen ? "rotate-180" : ""
+                }`}
+              />
+
+            </button>
+
+
+            {/* Dropdown */}
+
+            {blogOpen && (
+
+              <div className="absolute right-0 top-full pt-3">
+
+                <div className="w-[180px] overflow-hidden rounded-xl border border-slate-100 bg-white p-2 shadow-[0_15px_40px_rgba(15,76,180,0.12)]">
+
+                  {blogLinks.map((item) => (
+
+                    <Link
+                      key={item.name}
+                      to={item.path}
+                      onClick={() => setBlogOpen(false)}
+                      className="block rounded-lg px-4 py-3 text-[13px] font-medium text-[#17213b] transition hover:bg-blue-50 hover:text-blue-700"
+                    >
+
+                      {item.name}
+
+                    </Link>
+
+                  ))}
+
+                </div>
+
+              </div>
+
+            )}
+
+          </div>
+
+
+          {/* =================================================
+              GET IN TOUCH
+          ================================================= */}
 
           <Link
             to="/contact"
@@ -134,6 +209,9 @@ export default function Navbar() {
 
           <div className="flex flex-col gap-5">
 
+
+            {/* Normal links */}
+
             {navigation.map((item) => (
 
               <Link
@@ -150,7 +228,60 @@ export default function Navbar() {
             ))}
 
 
-            {/* Contact */}
+            {/* =================================================
+                MOBILE BLOG DROPDOWN
+            ================================================= */}
+
+            <div>
+
+              <button
+                type="button"
+                onClick={() => setBlogOpen(!blogOpen)}
+                className="flex items-center gap-2 text-sm font-medium text-slate-700"
+              >
+
+                Blogs
+
+                <ChevronDown
+                  size={15}
+                  className={`transition-transform duration-200 ${
+                    blogOpen ? "rotate-180" : ""
+                  }`}
+                />
+
+              </button>
+
+
+              {blogOpen && (
+
+                <div className="mt-3 ml-4 flex flex-col gap-3 border-l border-blue-100 pl-4">
+
+                  {blogLinks.map((item) => (
+
+                    <Link
+                      key={item.name}
+                      to={item.path}
+                      onClick={() => {
+                        setBlogOpen(false);
+                        setMobileOpen(false);
+                      }}
+                      className="text-sm text-slate-500 transition hover:text-blue-700"
+                    >
+
+                      {item.name}
+
+                    </Link>
+
+                  ))}
+
+                </div>
+
+              )}
+
+            </div>
+
+
+            {/* Get In Touch */}
 
             <Link
               to="/contact"

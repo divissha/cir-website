@@ -8,6 +8,8 @@ import Members from "./pages/Members";
 import Collaborations from "./pages/Collaborations";
 import OfficePG from "./pages/OfficePG";
 import EventsPage from "./components/events/EventsPage";
+import StudentsPage from "./components/students/StudentsPage";
+import GalleryPage from "./components/gallery/GalleryPage";
 
 
 function App() {
@@ -47,6 +49,16 @@ function App() {
             <Route
               path="/events"
               element={<EventsPage />}
+            />
+
+            <Route
+              path="/students"
+              element={<StudentsPage />}
+            />
+
+            <Route
+              path="/gallery"
+              element={<GalleryPage />}
             />
 
           </Routes>
