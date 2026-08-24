@@ -30,7 +30,7 @@ const presentCollaborators = [
     type: "Academic Collaboration",
     description:
       "Rovira i Virgili University is a modern public higher education institution with a strong focus on teaching, research and generating knowledge to address challenges facing society.",
-    logo: "/images/collaborations/urv.png",
+    logo: "src/components/collaborations/logos/Université_Rovira_i_Virgili_(logo).SVG.webp",
     url: "https://www.urv.cat/",
   },
 
@@ -39,7 +39,7 @@ const presentCollaborators = [
     type: "Academic Collaboration",
     description:
       "Universitas Budi Luhur is an Indonesian university focused on competency-based education, technology and developing graduates prepared for professional and global environments.",
-    logo: "/images/collaborations/urv.png",
+    logo: "src/components/collaborations/logos/Logo-Universitas-Budi-Luhur-Square.png",
     url: "https://www.budiluhur.ac.id/",
   },
 
@@ -48,16 +48,16 @@ const presentCollaborators = [
     type: "Academic Collaboration",
     description:
       "Universiti Teknologi Malaysia is a leading academic and research institution focused on science, technology and engineering, with an emphasis on innovation and technological development.",
-    logo: "/images/collaborations/urv.png",
+    logo: "src/components/collaborations/logos/UTM.webp",
     url: "https://www.utm.my/",
   },
 
   {
-    name: "Mercedes-Benz Research and Development India",
+    name: "Mercedes-Benz Research and Development India Pvt. Ltd.",
     type: "Industry Collaboration",
     description:
       "Mercedes-Benz Research and Development India is a major research and development centre working on future mobility solutions, autonomous vehicles, artificial intelligence, big data and connected technologies.",
-    logo: "/images/collaborations/urv.png",
+    logo: "/src/components/collaborations/logos/485-4854398_download-for-free-mercedes-icon-png-mercedes-benz.png",
     url: "https://www.mbrdi.co.in/",
   },
 
@@ -66,7 +66,7 @@ const presentCollaborators = [
     type: "Research Collaboration",
     description:
       "The Instituto de Robótica para la Dependencia promotes research and training in robotics and assistive technologies for people with disabilities and dependent persons.",
-    logo: "/images/collaborations/urv.png",
+    logo: "/src/components/collaborations/logos/imagess.jpg",
     url: "https://institutorobotica.org/",
   },
 
@@ -75,7 +75,7 @@ const presentCollaborators = [
     type: "Industry Collaboration",
     description:
       "NavAjna Technologies is an India-based technology company providing IT consulting and product engineering solutions, supporting organisations through technology and digital innovation.",
-    logo: "/images/collaborations/urv.png",
+    logo: "/src/components/collaborations/logos/logo-CF_pjoxr.png",
     url: "https://navajna.com/",
   },
 
@@ -84,7 +84,7 @@ const presentCollaborators = [
     type: "Industry Collaboration",
     description:
       "Addverb Technologies develops robotics and Industry 4.0 solutions for manufacturing and warehouse automation, with products covering industrial and warehouse automation requirements.",
-    logo: "/images/collaborations/urv.png",
+    logo: "/src/components/collaborations/logos/addverbprofile-180623153438-thumbnail.webp",
     url: "https://www.addverb.com/",
   },
 
@@ -102,7 +102,7 @@ const formerCollaborators = [
     type: "Former Academic Collaboration",
     description:
       "Carnegie Mellon University is a globally recognised research university with strengths across robotics, artificial intelligence, computer science and emerging technologies.",
-    logo: "/images/collaborations/urv.png",
+    logo: "/src/components/collaborations/logos/Carnegie_Mellon_University_Logo_full.png",
     url: "https://www.cmu.edu/",
   },
 
@@ -111,7 +111,7 @@ const formerCollaborators = [
     type: "Former Academic Collaboration",
     description:
       "EPFL is a leading technical university in Switzerland with an international research environment and a strong focus on education, research and innovation.",
-    logo: "/images/collaborations/urv.png",
+    logo: "/src/components/collaborations/logos/ecole-polytechnique-f-d-rale-de-lausanne-458-logo.png",
     url: "https://www.epfl.ch/",
   },
 
