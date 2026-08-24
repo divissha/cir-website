@@ -12,7 +12,7 @@ const presentCollaborators = [
     type: "Academic Collaboration",
     description:
       "The University of Illinois Urbana-Champaign is a public research university and the flagship institution of the University of Illinois system. Founded in 1867, it is a major centre for research and higher education.",
-    logo: "collaborations/logos/illi.net_",
+    logo: "src/components/collaborations/logos/university-of-illinois_at_urbana_champaign_logo-freelogovectors.net_.png",
     url: "https://illinois.edu/",
   },
 
@@ -21,7 +21,7 @@ const presentCollaborators = [
     type: "Academic Collaboration",
     description:
       "Bielefeld University is a research university in Germany known for interdisciplinary research and its emphasis on connecting research and teaching across academic disciplines.",
-    logo: "/images/collaborations/urv.png",
+    logo: "src/components/collaborations/logos/images.jpg",
     url: "https://www.uni-bielefeld.de/",
   },
 

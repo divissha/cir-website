@@ -16,20 +16,26 @@ export default function CollaborationItem({ collaboration }) {
 
         <div className="flex items-center justify-center">
 
-          <div className="flex h-[260px] w-full items-center justify-center rounded-xl border border-slate-100 bg-white p-8 shadow-[0_10px_35px_rgba(15,23,42,0.05)] transition-all duration-300 group-hover:border-blue-100 group-hover:shadow-[0_18px_45px_rgba(15,76,180,0.08)]">
+          <div className="h-[300px] w-full overflow-hidden rounded-xl border border-slate-100 bg-white">
 
             {collaboration.logo ? (
-              <img
-                src={collaboration.logo}
-                alt={`${collaboration.name} logo`}
-                className="max-h-[190px] max-w-[260px] object-contain transition-transform duration-300 group-hover:scale-105"
-              />
+              <div className="h-[300px] w-full overflow-hidden rounded-xl border border-slate-100 bg-white">
+
+                <img
+                  src={collaboration.logo}
+                  alt={`${collaboration.name} logo`}
+                  className="h-full w-full object-contain p-0"
+                />
+
+              </div>
             ) : (
-              <Building2
-                size={80}
-                strokeWidth={1.2}
-                className="text-blue-600"
-              />
+              <div className="flex h-full w-full items-center justify-center">
+                <Building2
+                  size={80}
+                  strokeWidth={1.2}
+                  className="text-blue-600"
+                />
+              </div>
             )}
 
           </div>

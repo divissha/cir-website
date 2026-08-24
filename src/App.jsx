@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Members from "./pages/Members";
 import Collaborations from "./pages/Collaborations";
 import OfficePG from "./pages/OfficePG";
+import EventsPage from "./components/events/EventsPage";
 
 
 function App() {
@@ -41,6 +42,11 @@ function App() {
             <Route
               path="/office-pg"
               element={<OfficePG />}
+            />
+
+            <Route
+              path="/events"
+              element={<EventsPage />}
             />
 
           </Routes>
