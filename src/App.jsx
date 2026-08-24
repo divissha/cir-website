@@ -10,6 +10,7 @@ import OfficePG from "./pages/OfficePG";
 import EventsPage from "./components/events/EventsPage";
 import StudentsPage from "./components/students/StudentsPage";
 import GalleryPage from "./components/gallery/GalleryPage";
+import DonationPage from "./components/donation/DonationPage";
 
 
 function App() {
@@ -59,6 +60,11 @@ function App() {
             <Route
               path="/gallery"
               element={<GalleryPage />}
+            />
+
+            <Route
+              path="/donation"
+              element={<DonationPage />}
             />
 
           </Routes>

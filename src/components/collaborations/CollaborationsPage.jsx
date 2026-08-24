@@ -122,7 +122,7 @@ function SectionHeading({ children }) {
 
   return (
 
-    <div className="mb-10 flex items-center gap-4">
+    <div className="mb-2 flex items-center gap-3">
 
       <div className="h-px flex-1 bg-slate-100" />
 
@@ -164,7 +164,7 @@ export default function CollaborationsPage() {
 
         <div className="mb-16 text-center">
 
-          <div className="mb-5 flex items-center justify-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-600">
+          <div className="mb-3 flex items-center justify-center gap-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-600">
 
             <span className="h-2 w-2 rounded-full bg-blue-800" />
 
@@ -184,7 +184,7 @@ export default function CollaborationsPage() {
           </h1>
 
 
-          <p className="mx-auto mt-4 max-w-[700px] text-[15px] leading-7 text-slate-500">
+          <p className="mx-auto mt-2 max-w-[700px] text-[15px] leading-7 text-slate-500">
 
             Building meaningful academic, research and industry
             partnerships to advance robotics, artificial intelligence

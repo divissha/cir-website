@@ -14,7 +14,7 @@ const navigation = [
   { name: "Office of PG", path: "/office-pg" },
   { name: "Collaborations", path: "/collaborations" },
   { name: "Projects", path: "/projects" },
-  { name: "Donations", path: "/donations" },
+  { name: "Donation", path: "/donation" },
 ];
 
 const blogLinks = [
