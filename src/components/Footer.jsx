@@ -27,8 +27,8 @@ export default function Footer() {
             <h3 className="font-semibold">Contact</h3>
             <p className="mt-5 text-sm leading-6 text-slate-300">
               Centre for Intelligent Robotics<br />
-              IIIT Allahabad<br />
-              Prayagraj, India
+              IIIT-Allahabad, Jhalwa, <br />
+              Prayagraj-211015, Uttar Pradesh, India
             </p>
             <a href="#" className="mt-4 inline-flex items-center gap-2 text-sm text-blue-300">
               Contact CIR <ArrowUpRight size={15} />

@@ -154,7 +154,6 @@ export default function MembersPage() {
             Faculty & Leadership
           </GroupTitle>
 
-
           {/* ===============================================
               CIR HEAD
           =============================================== */}

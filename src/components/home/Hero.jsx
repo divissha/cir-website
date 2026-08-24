@@ -20,12 +20,12 @@ export default function Hero() {
               Intelligence<br />that Moves the<br /><span className="text-blue-900">Future</span>
             </h1>
 
-            <p className="mt-7 max-w-[600px] text-[16px] leading-7 text-slate-600">
+            <p className="mt-6 max-w-[600px] text-[16px] leading-7 text-slate-600">
               Advancing the frontiers of Robotics, Artificial Intelligence,
               and Human–Robot Interaction for a smarter, safer and healthier tomorrow.
             </p>
 
-            <div className="mt-8 flex flex-wrap gap-4">
+            <div className="mt-7 flex flex-wrap gap-4">
               <a href="#research" className="flex items-center gap-3 rounded-lg bg-blue-900 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-blue-500/20 transition hover:-translate-y-0.5 hover:bg-blue-700">
                 Explore Research <ArrowRight size={17} />
               </a>

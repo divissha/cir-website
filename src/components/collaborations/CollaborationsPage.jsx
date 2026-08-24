@@ -12,6 +12,7 @@ const presentCollaborators = [
     type: "Academic Collaboration",
     description:
       "The University of Illinois Urbana-Champaign is a public research university and the flagship institution of the University of Illinois system. Founded in 1867, it is a major centre for research and higher education.",
+    logo: "collaborations/logos/illi.net_",
     url: "https://illinois.edu/",
   },
 
@@ -20,6 +21,7 @@ const presentCollaborators = [
     type: "Academic Collaboration",
     description:
       "Bielefeld University is a research university in Germany known for interdisciplinary research and its emphasis on connecting research and teaching across academic disciplines.",
+    logo: "/images/collaborations/urv.png",
     url: "https://www.uni-bielefeld.de/",
   },
 
@@ -28,6 +30,7 @@ const presentCollaborators = [
     type: "Academic Collaboration",
     description:
       "Rovira i Virgili University is a modern public higher education institution with a strong focus on teaching, research and generating knowledge to address challenges facing society.",
+    logo: "/images/collaborations/urv.png",
     url: "https://www.urv.cat/",
   },
 
@@ -36,6 +39,7 @@ const presentCollaborators = [
     type: "Academic Collaboration",
     description:
       "Universitas Budi Luhur is an Indonesian university focused on competency-based education, technology and developing graduates prepared for professional and global environments.",
+    logo: "/images/collaborations/urv.png",
     url: "https://www.budiluhur.ac.id/",
   },
 
@@ -44,6 +48,7 @@ const presentCollaborators = [
     type: "Academic Collaboration",
     description:
       "Universiti Teknologi Malaysia is a leading academic and research institution focused on science, technology and engineering, with an emphasis on innovation and technological development.",
+    logo: "/images/collaborations/urv.png",
     url: "https://www.utm.my/",
   },
 
@@ -52,6 +57,7 @@ const presentCollaborators = [
     type: "Industry Collaboration",
     description:
       "Mercedes-Benz Research and Development India is a major research and development centre working on future mobility solutions, autonomous vehicles, artificial intelligence, big data and connected technologies.",
+    logo: "/images/collaborations/urv.png",
     url: "https://www.mbrdi.co.in/",
   },
 
@@ -60,6 +66,7 @@ const presentCollaborators = [
     type: "Research Collaboration",
     description:
       "The Instituto de Robótica para la Dependencia promotes research and training in robotics and assistive technologies for people with disabilities and dependent persons.",
+    logo: "/images/collaborations/urv.png",
     url: "https://institutorobotica.org/",
   },
 
@@ -68,6 +75,7 @@ const presentCollaborators = [
     type: "Industry Collaboration",
     description:
       "NavAjna Technologies is an India-based technology company providing IT consulting and product engineering solutions, supporting organisations through technology and digital innovation.",
+    logo: "/images/collaborations/urv.png",
     url: "https://navajna.com/",
   },
 
@@ -76,6 +84,7 @@ const presentCollaborators = [
     type: "Industry Collaboration",
     description:
       "Addverb Technologies develops robotics and Industry 4.0 solutions for manufacturing and warehouse automation, with products covering industrial and warehouse automation requirements.",
+    logo: "/images/collaborations/urv.png",
     url: "https://www.addverb.com/",
   },
 
@@ -93,6 +102,7 @@ const formerCollaborators = [
     type: "Former Academic Collaboration",
     description:
       "Carnegie Mellon University is a globally recognised research university with strengths across robotics, artificial intelligence, computer science and emerging technologies.",
+    logo: "/images/collaborations/urv.png",
     url: "https://www.cmu.edu/",
   },
 
@@ -101,6 +111,7 @@ const formerCollaborators = [
     type: "Former Academic Collaboration",
     description:
       "EPFL is a leading technical university in Switzerland with an international research environment and a strong focus on education, research and innovation.",
+    logo: "/images/collaborations/urv.png",
     url: "https://www.epfl.ch/",
   },
 
@@ -173,7 +184,7 @@ export default function CollaborationsPage() {
           </h1>
 
 
-          <p className="mx-auto mt-6 max-w-[700px] text-[15px] leading-7 text-slate-500">
+          <p className="mx-auto mt-4 max-w-[700px] text-[15px] leading-7 text-slate-500">
 
             Building meaningful academic, research and industry
             partnerships to advance robotics, artificial intelligence
@@ -188,14 +199,14 @@ export default function CollaborationsPage() {
             PRESENT COLLABORATORS
         ================================================= */}
 
-        <div className="mb-20">
+        <div className="mb-10 ">
 
           <SectionHeading>
             Our Present Collaborators
           </SectionHeading>
 
 
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-4">
 
             {presentCollaborators.map((collaboration) => (
 

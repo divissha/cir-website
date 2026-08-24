@@ -2,7 +2,7 @@ import { useState } from "react";
 import { ArrowRight, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const navigation = ["Home", "Members", "Events", "Collaborations", "Students", "Office of PG", "Projects", "Gallery", "Donations"];
+const navigation = ["Home", "Members", "Events", "Office of PG", "Collaborations", "Projects", "Blogs", "Donations"];
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
