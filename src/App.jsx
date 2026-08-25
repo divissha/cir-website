@@ -11,6 +11,7 @@ import EventsPage from "./components/events/EventsPage";
 import StudentsPage from "./components/students/StudentsPage";
 import GalleryPage from "./components/gallery/GalleryPage";
 import DonationPage from "./components/donation/DonationPage";
+import ProjectsPage from "./components/projects/ProjectsPage";
 
 
 function App() {
@@ -65,6 +66,11 @@ function App() {
             <Route
               path="/donation"
               element={<DonationPage />}
+            />
+
+            <Route 
+              path="/projects" 
+              element={<ProjectsPage />} 
             />
 
           </Routes>

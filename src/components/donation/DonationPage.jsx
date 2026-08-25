@@ -49,11 +49,11 @@ function DonorCard({ donor }) {
         <div className="flex min-h-[180px] items-center justify-center bg-slate-50 px-8 py-8 md:w-[210px]">
           <div className="text-center">
 
-            <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full border border-blue-100 bg-white text-blue-600 shadow-sm">
+            <div className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full border border-blue-100 bg-white text-blue-800 shadow-sm">
               <Award size={23} strokeWidth={1.5} />
             </div>
 
-            <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-blue-600">
+            <p className="text-[12px] font-semibold uppercase tracking-[0.2em] text-blue-800">
               {donor.category}
             </p>
           </div>
@@ -75,7 +75,7 @@ function DonorCard({ donor }) {
         {/* Donor Information */}
         <div className="flex flex-1 flex-col justify-center px-8 pb-8 md:px-10 md:py-8">
 
-          <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-600">
+          <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-800">
             Esteemed Donor
           </p>
 
@@ -121,19 +121,19 @@ export default function DonationPage() {
           <div className="max-w-[760px]">
 
             <div className="mb-5 flex items-center gap-3">
-              <span className="h-[1px] w-10 bg-blue-600" />
+              <span className="h-[1px] w-10 bg-blue-800" />
 
-              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-600">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-800">
                 Support CIR
               </p>
             </div>
 
             <h1 className="font-display text-[44px] font-semibold leading-[1.08] tracking-tight text-[#0b1736] md:text-[58px]">
               Supporting the Future of
-              <span className="text-blue-600"> Intelligent Robotics.</span>
+              <span className="text-blue-800"> Intelligent Robotics.</span>
             </h1>
 
-            <p className="mt-6 max-w-[700px] text-[16px] leading-8 text-slate-500">
+            <p className="mt-2 max-w-[700px] text-[16px] leading-8 text-slate-500">
               Contributions from individuals and organizations help the Centre
               for Intelligent Robotics advance research, innovation and
               education in Robotics, Artificial Intelligence and related fields.
@@ -156,16 +156,16 @@ export default function DonationPage() {
 
           <div>
 
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-600">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-800">
               Contributions & Support
             </p>
 
             <h2 className="mt-3 font-display text-[32px] font-semibold leading-tight text-[#0b1736] md:text-[40px]">
               Building a stronger ecosystem for
-              <span className="text-blue-600"> research and innovation.</span>
+              <span className="text-blue-800"> research and innovation.</span>
             </h2>
 
-            <p className="mt-5 max-w-[650px] text-[15px] leading-8 text-slate-500">
+            <p className="mt-2 max-w-[650px] text-[15px] leading-8 text-slate-500">
               Donations and contributions enable CIR to support research
               activities, student initiatives, laboratory infrastructure,
               academic programs and the development of intelligent robotic
@@ -182,7 +182,7 @@ export default function DonationPage() {
 
             <div className="relative">
 
-              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-white text-blue-600 shadow-sm">
+              <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-xl bg-white text-blue-800 shadow-sm">
                 <Heart size={23} strokeWidth={1.5} />
               </div>
 
@@ -221,7 +221,7 @@ export default function DonationPage() {
           {/* Heading */}
           <div className="mb-12">
 
-            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-600">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.2em] text-blue-800">
               Acknowledgement
             </p>
 
@@ -267,7 +267,7 @@ export default function DonationPage() {
 
           <div className="group rounded-2xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_18px_45px_rgba(15,76,180,0.08)] md:p-8">
 
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-blue-600">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-blue-800">
 
               <ShieldCheck
                 size={23}
@@ -279,7 +279,7 @@ export default function DonationPage() {
 
             <div className="mt-6">
 
-              <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-600">
+              <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-800">
                 Tax Benefit
               </div>
 
@@ -301,7 +301,7 @@ export default function DonationPage() {
                 href="https://apply.iiita.ac.in/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-2 text-[13px] font-semibold text-blue-600 transition hover:text-blue-800"
+                className="mt-5 inline-flex items-center gap-2 text-[13px] font-semibold text-blue-800 transition hover:text-blue-600"
               >
 
                 Government Notification
@@ -322,7 +322,7 @@ export default function DonationPage() {
 
           <div className="group rounded-2xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-[0_18px_45px_rgba(15,76,180,0.08)] md:p-8">
 
-            <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-blue-600">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-blue-800">
 
               <Building2
                 size={23}
@@ -334,7 +334,7 @@ export default function DonationPage() {
 
             <div className="mt-6">
 
-              <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-600">
+              <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-800">
                 Corporate Support
               </div>
 
@@ -356,7 +356,7 @@ export default function DonationPage() {
                 href="https://apply.iiita.ac.in/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-5 inline-flex items-center gap-2 text-[13px] font-semibold text-blue-600 transition hover:text-blue-800"
+                className="mt-5 inline-flex items-center gap-2 text-[13px] font-semibold text-blue-800 transition hover:text-blue-600"
               >
 
                 View Institutional Information
@@ -419,7 +419,7 @@ export default function DonationPage() {
 
               <div className="flex items-center gap-4">
 
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-blue-600">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-blue-100 bg-blue-50 text-blue-800">
 
                   <FileText
                     size={22}
@@ -431,7 +431,7 @@ export default function DonationPage() {
 
                 <div>
 
-                  <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-600">
+                  <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-800">
                     Offline Donation
                   </div>
 
@@ -478,7 +478,7 @@ export default function DonationPage() {
 
                   <Phone
                     size={15}
-                    className="text-blue-600"
+                    className="text-blue-800"
                   />
 
                   +91-532-2922007
@@ -490,7 +490,7 @@ export default function DonationPage() {
 
                   <Mail
                     size={15}
-                    className="text-blue-600"
+                    className="text-blue-800"
                   />
 
                   jr.fa@iiita.ac.in
@@ -510,7 +510,7 @@ export default function DonationPage() {
 
               <div className="flex items-center gap-4">
 
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-blue-100 bg-white text-blue-600">
+                <div className="flex h-12 w-12 items-center justify-center rounded-xl border border-blue-100 bg-white text-blue-800">
 
                   <Landmark
                     size={22}
@@ -522,7 +522,7 @@ export default function DonationPage() {
 
                 <div>
 
-                  <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-600">
+                  <div className="text-[10px] font-semibold uppercase tracking-[0.18em] text-blue-800">
                     Online Donation
                   </div>
 
